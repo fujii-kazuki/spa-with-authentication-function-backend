@@ -1,0 +1,19 @@
+{
+  "name": "spa-with-authentication-function-backend",
+	"dockerComposeFile": "../docker-compose.yml",
+	"service": "backend",
+	"workspaceFolder": "/backend",
+	"features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {},
+		"ghcr.io/devcontainers/features/git:1": {}
+	},
+  "customizations": {
+		"vscode": {
+			"extensions": [
+				"eamodio.gitlens",
+				"shopify.ruby-lsp"
+			]
+		}
+	},
+	"shutdownAction": "none"
+}
