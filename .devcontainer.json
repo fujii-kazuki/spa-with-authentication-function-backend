@@ -2,6 +2,11 @@
   "name": "spa-with-authentication-function-backend",
 	"dockerComposeFile": "../docker-compose.yml",
 	"service": "backend",
+	"runServices": [
+		"db",
+		"backend",
+		"web"
+	],
 	"workspaceFolder": "/backend",
 	"features": {
     "ghcr.io/devcontainers/features/common-utils:2": {},
@@ -11,6 +16,8 @@
 		"vscode": {
 			"extensions": [
 				"eamodio.gitlens",
+				"streetsidesoftware.code-spell-checker",
+				"oderwat.indent-rainbow",
 				"shopify.ruby-lsp"
 			]
 		}
